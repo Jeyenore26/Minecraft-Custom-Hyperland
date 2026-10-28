@@ -1,0 +1,29 @@
+[
+  {
+    "builtin": "inventory"
+  },
+  {
+    "app": "kitty.desktop"
+  },
+  {
+    "builtin": "files"
+  },
+  {
+    "app": "google-chrome.desktop"
+  },
+  {
+    "app": "t3-code.desktop"
+  },
+  {
+    "app": "com.obsproject.Studio.desktop"
+  },
+  {
+    "app": "terminator.desktop"
+  },
+  {
+    "app": "discord_discord.desktop"
+  },
+  {
+    "builtin": "pause"
+  }
+]

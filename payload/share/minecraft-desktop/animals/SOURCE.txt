@@ -1,0 +1,13 @@
+Original Minecraft Bedrock vanilla animal geometry, textures and animations.
+Official Mojang bedrock-samples, tag v1.21.50.26-preview
+Pinned commit: 26fec7fe068d462ac30a1cd0bbf63817212bfabb
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/models/entity/fox.geo.json
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/models/entity/pig.geo.json
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/models/entity/rabbit.geo.json
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/textures/entity/fox/fox.png
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/textures/entity/pig/pig.png
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/textures/entity/rabbit/white.png
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/animations/fox.animation.json
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/animations/pig.animation.json
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/animations/rabbit.animation.json
+https://github.com/Mojang/bedrock-samples/blob/26fec7fe068d462ac30a1cd0bbf63817212bfabb/resource_pack/animations/quadruped.animation.json

@@ -1,0 +1,10 @@
+@import url("resource:///com/ubuntu/themes/Yaru-dark/4.0/gtk.css");
+@define-color theme_bg_color #17252b;
+@define-color theme_fg_color #e3dfc6;
+@define-color theme_selected_bg_color #3a634b;
+@define-color theme_selected_fg_color #fff2d4;
+window, dialog { background-color: #17252b; color: #e3dfc6; }
+headerbar { background: #1e3034; border-bottom: 2px solid #547663; box-shadow: none; border-radius: 0; }
+button { border-radius: 0; }
+button.suggested-action, selection { background: #3a634b; color: #fff2d4; }
+entry { border-radius: 0; caret-color: #a5d590; }

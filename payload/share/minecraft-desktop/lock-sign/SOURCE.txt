@@ -1,0 +1,4 @@
+Oak sign texture: Minecraft Java 1.20.1, Mojang client archive.
+SHA1 0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838
+assets/minecraft/textures/entity/signs/oak.png
+SVG widgets and beveled button built by ~/minecraft-hyprland/build-sign-lock.py.

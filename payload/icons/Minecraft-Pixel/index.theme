@@ -1,0 +1,12 @@
+[Icon Theme]
+Name=Minecraft Pixel
+Comment=Pixel tools and inventory icons
+Inherits=Tela-dark,Adwaita,hicolor
+Directories=scalable/apps
+
+[scalable/apps]
+Size=64
+Type=Scalable
+MinSize=16
+MaxSize=256
+Context=Applications

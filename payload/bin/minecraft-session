@@ -1,0 +1,28 @@
+#!/bin/bash
+set -u
+export XDG_CURRENT_DESKTOP=Hyprland
+export XDG_SESSION_DESKTOP=Hyprland
+export XDG_SESSION_TYPE=wayland
+export GTK_THEME=Minecraft-DeepSlate
+export XCURSOR_THEME=Adwaita
+export XCURSOR_SIZE=24
+schema=org.gnome.desktop.interface
+old_icons=$(gsettings get "$schema" icon-theme)
+old_theme=$(gsettings get "$schema" gtk-theme)
+old_font=$(gsettings get "$schema" font-name)
+old_mono=$(gsettings get "$schema" monospace-font-name)
+old_scheme=$(gsettings get "$schema" color-scheme)
+restore() {
+ gsettings set "$schema" icon-theme "$old_icons"
+ gsettings set "$schema" gtk-theme "$old_theme"
+ gsettings set "$schema" font-name "$old_font"
+ gsettings set "$schema" monospace-font-name "$old_mono"
+ gsettings set "$schema" color-scheme "$old_scheme"
+}
+trap restore EXIT
+gsettings set "$schema" icon-theme Minecraft-Pixel
+gsettings set "$schema" gtk-theme Minecraft-DeepSlate
+gsettings set "$schema" font-name 'Sans 11'
+gsettings set "$schema" monospace-font-name 'Monocraft 11'
+gsettings set "$schema" color-scheme prefer-dark
+/usr/bin/start-hyprland -- --config "$HOME/.config/hypr/minecraft.lua"

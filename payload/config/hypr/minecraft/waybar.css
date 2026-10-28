@@ -1,0 +1,104 @@
+* { font-family: Monocraft, monospace; font-size: 15px; border: none; border-radius: 0; min-height: 0; }
+window#waybar { background: transparent; color: #eeeeee; }
+window#waybar.realm { background: rgba(37,37,37,0.96); border: 2px solid; border-color: #777777 #111111 #111111 #777777; }
+#custom-realm { padding: 0 16px; color: #fff0bc; }
+#custom-shortcuts { padding: 0 12px; color: #b7dc9f; }
+#custom-shortcuts:hover { background: #444444; color: #ffffff; }
+#clock { font-size: 18px; padding: 0 12px; }
+#cpu, #memory, #network, #pulseaudio, #battery, #tray, #custom-notifications { padding: 0 8px; }
+#battery.warning { color: #ffce6e; } #battery.critical { color: #ff8b7b; }
+#custom-ws1, #custom-ws2, #custom-ws3, #custom-ws4, #custom-ws5, #custom-ws6, #custom-ws7, #custom-ws8, #custom-ws9 { min-width: 24px; margin: 6px 2px; padding: 0 4px; color: #bbbbbb; background: #444444; border: 2px solid; border-color: #222222 #777777 #777777 #222222; }
+#custom-ws1.active, #custom-ws2.active, #custom-ws3.active, #custom-ws4.active, #custom-ws5.active, #custom-ws6.active, #custom-ws7.active, #custom-ws8.active, #custom-ws9.active { color: #ffffff; background: #737868; border-color: #fff2cb; }
+#custom-ws1.occupied, #custom-ws2.occupied, #custom-ws3.occupied, #custom-ws4.occupied, #custom-ws5.occupied, #custom-ws6.occupied, #custom-ws7.occupied, #custom-ws8.occupied, #custom-ws9.occupied { color: #ffffff; border-bottom-color: #bccb9b; }
+tooltip { background: #1e102e; color: #ffffff; border: 2px solid #573183; font-size: 16px; }
+window#waybar.hotbar .modules-center { background-image: url("@HOME@/.local/share/minecraft-desktop/vanilla/hotbar.svg"); background-size: 728px 88px; background-repeat: no-repeat; background-position: center; background-color: transparent; padding: 4px; border: none; }
+window#waybar.hotbar #custom-inventory, window#waybar.hotbar #custom-terminal, window#waybar.hotbar #custom-files, window#waybar.hotbar #custom-browser, window#waybar.hotbar #custom-capture, window#waybar.hotbar #custom-audio, window#waybar.hotbar #custom-notifications, window#waybar.hotbar #custom-lock, window#waybar.hotbar #custom-pause { min-width: 80px; min-height: 80px; margin: 0; padding: 0; border: none; background-color: transparent; background-size: 56px 56px; background-position: center; background-repeat: no-repeat; box-shadow: none; text-shadow: none; }
+window#waybar.hotbar #custom-inventory { background-image: url("/usr/share/icons/Yaru/256x256/actions/view-app-grid.png"); }
+window#waybar.hotbar #custom-inventory:hover { background-image: url("/usr/share/icons/Yaru/256x256/actions/view-app-grid.png"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-terminal { background-image: url("/usr/share/icons/hicolor/scalable/apps/kitty.svg"); }
+window#waybar.hotbar #custom-terminal:hover { background-image: url("/usr/share/icons/hicolor/scalable/apps/kitty.svg"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-files { background-image: url("/usr/share/icons/Yaru/256x256/apps/org.gnome.Nautilus.png"); }
+window#waybar.hotbar #custom-files:hover { background-image: url("/usr/share/icons/Yaru/256x256/apps/org.gnome.Nautilus.png"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-browser { background-image: url("/usr/share/icons/hicolor/64x64/apps/firefox.png"); }
+window#waybar.hotbar #custom-browser:hover { background-image: url("/usr/share/icons/hicolor/64x64/apps/firefox.png"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-capture { background-image: url("/usr/share/icons/Yaru/256x256/apps/org.gnome.Screenshot.png"); }
+window#waybar.hotbar #custom-capture:hover { background-image: url("/usr/share/icons/Yaru/256x256/apps/org.gnome.Screenshot.png"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-audio { background-image: url("/usr/share/icons/Yaru/256x256/devices/multimedia-volume-control.png"); }
+window#waybar.hotbar #custom-audio:hover { background-image: url("/usr/share/icons/Yaru/256x256/devices/multimedia-volume-control.png"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-notifications { background-image: url("/usr/share/icons/Yaru/scalable/apps/preferences-system-notifications-symbolic.svg"); }
+window#waybar.hotbar #custom-notifications:hover { background-image: url("/usr/share/icons/Yaru/scalable/apps/preferences-system-notifications-symbolic.svg"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-lock { background-image: url("/usr/share/icons/Yaru/256x256/categories/system-lock-screen.png"); }
+window#waybar.hotbar #custom-lock:hover { background-image: url("/usr/share/icons/Yaru/256x256/categories/system-lock-screen.png"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+window#waybar.hotbar #custom-pause { background-image: url("/usr/share/icons/Yaru/256x256/actions/system-shutdown.png"); }
+window#waybar.hotbar #custom-pause:hover { background-image: url("/usr/share/icons/Yaru/256x256/actions/system-shutdown.png"), url("@HOME@/.local/share/minecraft-desktop/vanilla/selected.svg"); background-size: 56px 56px, 80px 80px; }
+
+#window { padding: 0 14px; color: #bdbdbd; }
+
+#custom-xp-clock { font-size: 21px; color: #a6e65d; text-shadow: 2px 2px #203610; min-width: 182px; padding: 0 6px 11px; margin: 2px 0; background-repeat: no-repeat; background-position: center bottom; background-size: 182px 7px; }
+#custom-xp-clock.xp-0 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-0.svg"); }
+#custom-xp-clock.xp-1 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-1.svg"); }
+#custom-xp-clock.xp-2 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-2.svg"); }
+#custom-xp-clock.xp-3 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-3.svg"); }
+#custom-xp-clock.xp-4 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-4.svg"); }
+#custom-xp-clock.xp-5 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-5.svg"); }
+#custom-xp-clock.xp-6 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-6.svg"); }
+#custom-xp-clock.xp-7 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-7.svg"); }
+#custom-xp-clock.xp-8 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-8.svg"); }
+#custom-xp-clock.xp-9 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-9.svg"); }
+#custom-xp-clock.xp-10 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-10.svg"); }
+#custom-xp-clock.xp-11 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-11.svg"); }
+#custom-xp-clock.xp-12 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-12.svg"); }
+#custom-xp-clock.xp-13 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-13.svg"); }
+#custom-xp-clock.xp-14 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-14.svg"); }
+#custom-xp-clock.xp-15 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-15.svg"); }
+#custom-xp-clock.xp-16 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-16.svg"); }
+#custom-xp-clock.xp-17 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-17.svg"); }
+#custom-xp-clock.xp-18 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-18.svg"); }
+#custom-xp-clock.xp-19 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-19.svg"); }
+#custom-xp-clock.xp-20 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-20.svg"); }
+#custom-xp-clock.xp-21 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-21.svg"); }
+#custom-xp-clock.xp-22 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-22.svg"); }
+#custom-xp-clock.xp-23 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-23.svg"); }
+#custom-xp-clock.xp-24 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-24.svg"); }
+#custom-xp-clock.xp-25 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-25.svg"); }
+#custom-xp-clock.xp-26 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-26.svg"); }
+#custom-xp-clock.xp-27 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-27.svg"); }
+#custom-xp-clock.xp-28 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-28.svg"); }
+#custom-xp-clock.xp-29 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-29.svg"); }
+#custom-xp-clock.xp-30 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-30.svg"); }
+#custom-xp-clock.xp-31 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-31.svg"); }
+#custom-xp-clock.xp-32 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-32.svg"); }
+#custom-xp-clock.xp-33 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-33.svg"); }
+#custom-xp-clock.xp-34 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-34.svg"); }
+#custom-xp-clock.xp-35 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-35.svg"); }
+#custom-xp-clock.xp-36 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-36.svg"); }
+#custom-xp-clock.xp-37 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-37.svg"); }
+#custom-xp-clock.xp-38 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-38.svg"); }
+#custom-xp-clock.xp-39 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-39.svg"); }
+#custom-xp-clock.xp-40 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-40.svg"); }
+#custom-xp-clock.xp-41 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-41.svg"); }
+#custom-xp-clock.xp-42 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-42.svg"); }
+#custom-xp-clock.xp-43 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-43.svg"); }
+#custom-xp-clock.xp-44 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-44.svg"); }
+#custom-xp-clock.xp-45 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-45.svg"); }
+#custom-xp-clock.xp-46 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-46.svg"); }
+#custom-xp-clock.xp-47 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-47.svg"); }
+#custom-xp-clock.xp-48 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-48.svg"); }
+#custom-xp-clock.xp-49 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-49.svg"); }
+#custom-xp-clock.xp-50 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-50.svg"); }
+#custom-xp-clock.xp-51 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-51.svg"); }
+#custom-xp-clock.xp-52 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-52.svg"); }
+#custom-xp-clock.xp-53 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-53.svg"); }
+#custom-xp-clock.xp-54 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-54.svg"); }
+#custom-xp-clock.xp-55 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-55.svg"); }
+#custom-xp-clock.xp-56 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-56.svg"); }
+#custom-xp-clock.xp-57 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-57.svg"); }
+#custom-xp-clock.xp-58 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-58.svg"); }
+#custom-xp-clock.xp-59 { background-image: url("@HOME@/.local/share/minecraft-desktop/ui/xp-59.svg"); }
+
+/* The Wi-Fi icon opens the same themed panel as the network label. */
+#custom-wifi { min-width: 24px; padding: 0 8px; font-size: 0; background-image: url("@HOME@/.config/hypr/minecraft/wifi/navbar-wifi.svg"); background-size: 20px 20px; background-repeat: no-repeat; background-position: center; }
+#custom-wifi:hover, #custom-notifications:hover { background-color: #444444; }
+
+#custom-settings { color: #b7dc9f; padding: 0 12px; background: #2b4638; }
+#custom-settings:hover { background: #3d5e44; }

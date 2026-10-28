@@ -1,0 +1,115 @@
+[
+  {
+    "name": "realm",
+    "layer": "top",
+    "position": "top",
+    "height": 48,
+    "margin-top": 10,
+    "margin-left": 14,
+    "margin-right": 14,
+    "spacing": 6,
+    "modules-left": [
+      "custom/realm",
+      "custom/shortcuts",
+      "custom/settings",
+      "hyprland/window"
+    ],
+    "modules-center": [
+      "custom/xp-clock"
+    ],
+    "modules-right": [
+      "cpu",
+      "memory",
+      "pulseaudio",
+      "battery",
+      "tray",
+      "custom/wifi",
+      "custom/notifications"
+    ],
+    "custom/realm": {
+      "format": "Jeyenore",
+      "tooltip": "Jeyenore \u2022 Open inventory",
+      "on-click": "@HOME@/.config/hypr/minecraft/launcher.sh"
+    },
+    "custom/shortcuts": {
+      "format": "Shortcuts",
+      "tooltip-format": "Keyboard shortcuts and moving windows \u00b7 Super + H",
+      "on-click": "@HOME@/.config/hypr/minecraft/guide.py"
+    },
+    "hyprland/window": {
+      "max-length": 40,
+      "separate-outputs": true,
+      "tooltip": false
+    },
+    "cpu": {
+      "format": "CPU {usage}%",
+      "interval": 5,
+      "on-click": "gnome-system-monitor",
+      "tooltip": true
+    },
+    "memory": {
+      "format": "RAM {percentage}%",
+      "interval": 5,
+      "on-click": "gnome-system-monitor",
+      "tooltip": true
+    },
+    "network": {
+      "format-wifi": "Wi-Fi {signalStrength}%",
+      "format-ethernet": "Ethernet",
+      "format-disconnected": "Offline",
+      "tooltip-format": "{ifname}: {ipaddr}",
+      "on-click": "/usr/bin/python3 @HOME@/.config/hypr/minecraft/wifi/wifi.py --live",
+      "on-click-right": "nm-connection-editor"
+    },
+    "pulseaudio": {
+      "format": "VOL {volume}%",
+      "format-muted": "Muted",
+      "on-click": "pavucontrol",
+      "scroll-step": 5,
+      "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-charging": "+ {capacity}%",
+      "format-icons": [
+        "\u2581",
+        "\u2582",
+        "\u2584",
+        "\u2586",
+        "\u2588"
+      ],
+      "states": {
+        "warning": 25,
+        "critical": 12
+      }
+    },
+    "tray": {
+      "icon-size": 18,
+      "spacing": 8
+    },
+    "custom/notifications": {
+      "format": "\u2630",
+      "tooltip": "Achievements / notifications",
+      "on-click": "swaync-client -t"
+    },
+    "custom/xp-clock": {
+      "exec": "@HOME@/.config/hypr/minecraft/xp-clock.py",
+      "return-type": "json",
+      "interval": 1,
+      "format": "{}",
+      "tooltip": true
+    },
+    "keyboard-mode": "none",
+    "custom/wifi": {
+      "format": "Wi-Fi",
+      "tooltip-format": "Wi-Fi settings \u00b7 right-click for saved connections",
+      "on-click-right": "nm-connection-editor",
+      "on-click": "/usr/bin/python3 @HOME@/.config/hypr/minecraft/wifi/wifi.py --live"
+    },
+    "custom/settings": {
+      "format": "Settings",
+      "tooltip": "System settings \u2022 Super + comma",
+      "on-click": "/usr/bin/python3 @HOME@/.config/hypr/minecraft/settings.py"
+    }
+  }
+]

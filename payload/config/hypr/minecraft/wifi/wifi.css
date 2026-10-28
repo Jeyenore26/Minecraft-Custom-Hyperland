@@ -1,0 +1,27 @@
+* { font-family: "Minecraft", "DejaVu Sans"; font-size: 19px; border-radius: 0; box-shadow: none; }
+window { background: #292929; color: #e4e4e4; }
+#inventory { border: 4px solid #0b0b0b; box-shadow: inset 3px 3px #626262, inset -3px -3px #161616; }
+.title { font-size: 31px; color: #f2f2f2; text-shadow: 2px 2px #0d0d0d; }
+.subtitle { font-size: 17px; color: #ababab; }
+.section { font-size: 20px; }
+button { background-image: none; background-color: #414141; color: #efefef; text-shadow: 2px 2px #151515; border: 2px solid #0e0e0e; box-shadow: inset 2px 2px #717171, inset -2px -2px #242424; padding: 12px 15px; min-height: 21px; }
+button:hover, button:focus { background-color: #4c5840; color: #e0f5c8; box-shadow: inset 2px 2px #91ad76, inset -2px -2px #293320; }
+button:active { box-shadow: inset 2px 2px #293320; }
+button:disabled { color: #888; background-color: #303030; }
+.close { padding: 7px 13px; min-height: 20px; }
+.network-well { background: #161616; border: 3px solid; border-color: #0e0e0e #575757 #575757 #0e0e0e; }
+viewport { background: transparent; }
+.network { background: #252525; padding: 15px 13px; border: 2px solid #414141; }
+.connected { background: #252e20; border-color: #83aa59; }
+.ssid { color: #fff; font-size: 22px; text-shadow: 2px 2px #151515; }
+.network-detail { color: #b8b8b8; font-size: 16px; }
+.connected-text { color: #b2e57d; font-size: 16px; }
+.hint { color: #ababab; font-size: 16px; }
+.empty { color: #ccc; }
+scrollbar trough { background: #161616; }
+scrollbar slider { background: #4d4d4d; border: 2px solid #707070; min-width: 8px; }
+entry { background: #161616; color: #fff; padding: 12px; border: 2px solid #777; }
+entry:focus { border-color: #91ad76; }
+
+.signal-lit { background-color: #7dd44d; }
+.signal-dim { background-color: #3b3b3b; }

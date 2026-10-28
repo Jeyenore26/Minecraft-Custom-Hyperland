@@ -1,0 +1,107 @@
+/* Frosted achievement cards. Transparent gaps never paint a tall backplate. */
+* { font-family: Monocraft, monospace; font-size: 14px; box-shadow: none; text-shadow: none; }
+.control-center, .floating-notifications, .blank-window {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.control-center { padding: 16px 18px 18px; }
+.widget-title {
+  background: linear-gradient(to bottom, rgba(108,126,151,0.60), rgba(40,52,72,0.62));
+  border: 1px solid rgba(255,255,255,0.30);
+  border-bottom: none;
+  border-radius: 24px 24px 0 0;
+  padding: 20px 22px 12px;
+  margin: 0;
+  color: #fff2b5;
+  animation: glass-arrive 360ms ease-out 1;
+}
+.widget-title > label { font-size: 22px; text-shadow: 0 1px 3px rgba(0,0,0,0.28); }
+button {
+  background: rgba(255,255,255,0.12);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 14px;
+  padding: 7px 12px;
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+button:hover, button:focus { background: rgba(255,255,255,0.25); border-color: rgba(255,255,255,0.48); }
+.widget-title button { font-size: 12px; }
+.widget-dnd {
+  background: rgba(40,52,72,0.62);
+  color: #eef4ff;
+  border: 1px solid rgba(255,255,255,0.30);
+  border-top: none;
+  border-radius: 0 0 24px 24px;
+  padding: 12px 22px 20px;
+  margin: 0 0 12px;
+  animation: glass-arrive 360ms ease-out 1;
+}
+.widget-dnd switch { background: rgba(255,255,255,0.16); border: none; border-radius: 18px; padding: 3px; }
+.widget-dnd switch:checked { background: #34c978; }
+.widget-dnd switch slider { background: #ffffff; border: none; border-radius: 50%; min-width: 22px; min-height: 22px; box-shadow: 0 2px 4px rgba(0,0,0,0.25); }
+.control-center-list { background: transparent; margin: 0; }
+.control-center-list-placeholder { color: #eef4ff; opacity: 1; }
+.control-center-list-placeholder image { -gtk-icon-transform: scale(0.5); opacity: 0.65; }
+.control-center-list-placeholder label { background: rgba(40,52,72,0.55); padding: 10px 18px; border-radius: 18px; }
+.notification-row, .notification-row:hover, .notification-row:focus { background: transparent; outline: none; }
+.notification {
+  background-color: rgba(32,43,61,0.55);
+  background-image: linear-gradient(135deg, rgba(235,245,255,0.19), rgba(235,245,255,0.02));
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.32);
+  border-radius: 22px;
+  padding: 0;
+  margin: 5px 8px 10px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.18), 0 4px 10px rgba(0,0,0,0.12);
+  animation: glass-arrive 420ms ease-out 1;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+.notification:hover { background-color: rgba(67,81,104,0.66); border-color: rgba(255,255,255,0.58); }
+.notification-default-action {
+  background-color: transparent;
+  background-image: linear-gradient(115deg, transparent 20%, rgba(255,255,255,0.15) 50%, transparent 80%);
+  background-size: 100px 100%;
+  background-repeat: no-repeat;
+  background-position: -110px 0;
+  border: none;
+  border-radius: 21px;
+  padding: 12px 14px;
+  animation: glass-shine 850ms ease-out 1;
+}
+.notification-default-action:hover, .notification-default-action:focus { background-color: rgba(255,255,255,0.06); box-shadow: inset 0 0 0 1px rgba(255,255,255,0.22); }
+.notification-content { background: transparent; padding: 0; min-height: 48px; }
+.summary { font-size: 16px; font-weight: normal; color: #fff2b5; text-shadow: 0 1px 2px rgba(0,0,0,0.30); }
+.body { font-size: 13px; color: #f6f8ff; text-shadow: 0 1px 2px rgba(0,0,0,0.30); }
+.time { font-size: 10px; color: #c8d3e5; margin-right: 18px; }
+.image { margin-right: 10px; animation: glass-icon 500ms ease-out 1; }
+.notification-action { background: rgba(255,255,255,0.10); color: #ffffff; border: none; border-top: 1px solid rgba(255,255,255,0.16); border-radius: 0 0 20px 20px; padding: 9px; }
+.notification-action:hover, .notification-action:focus { background: rgba(255,255,255,0.22); }
+.close-button { background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.20); color: #ffffff; border-radius: 50%; min-width: 20px; min-height: 20px; padding: 0; margin: 10px 12px 0 0; }
+.close-button:hover { background: rgba(240,100,100,0.65); }
+.notification.critical { border-color: rgba(255,145,145,0.70); }
+.critical .summary { color: #ffb3b3; }
+.critical .notification-default-action { animation: none; }
+.control-center .notification { margin: 0 2px 14px; }
+.control-center .notification-default-action { padding: 0; }
+.control-center .notification-content { padding: 16px 20px; }
+.control-center .body { margin-top: 6px; }
+.control-center .notification-row:nth-child(2) .notification { animation-duration: 500ms; }
+.control-center .notification-row:nth-child(3) .notification { animation-duration: 580ms; }
+scrollbar { background: transparent; border: none; }
+scrollbar slider { background: rgba(255,255,255,0.25); border-radius: 10px; min-width: 3px; }
+@keyframes glass-arrive {
+  0% { opacity: 0; }
+  35% { opacity: 0.45; }
+  100% { opacity: 1; }
+}
+@keyframes glass-shine {
+  0% { background-position: -110px 0; }
+  20% { background-position: -110px 0; }
+  100% { background-position: 500px 0; }
+}
+@keyframes glass-icon {
+  0% { -gtk-icon-transform: scale(0.8); opacity: 0; }
+  65% { -gtk-icon-transform: scale(1.08); opacity: 1; }
+  100% { -gtk-icon-transform: scale(1); opacity: 1; }
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="272" viewBox="0 0 60 90" shape-rendering="crispEdges">
+<!-- Open book, viewed toward its spine: leather cover, gold corners, layered pages. -->
+<path fill="#76522a" d="M4 9L28 16 56 8 58 43 30 51 3 44Z"/>
+<path fill="#a36a2c" d="M5 8L29 15 55 8 56 42 30 49 4 42Z"/>
+<path fill="#ecb823" d="M5 8L10 10 10 14 5 13ZM50 10L55 8 56 14 51 15ZM4 37L10 39 10 43 4 42ZM51 39L56 37 56 42 51 44Z"/>
+<path fill="#666049" d="M11 10L29 17 49 10 51 40 30 47 10 40Z"/>
+<path fill="#c5c19a" d="M13 9L29 16 47 9 49 38 30 45 12 38Z"/>
+<path fill="#e7e1b2" d="M14 7L29 14 46 7 48 36 30 43 13 36Z"/>
+<path fill="#d7d2a7" d="M14 7L29 14 30 43 13 36Z"/>
+<path fill="#f0e9bb" d="M29 14L46 7 48 36 30 43Z"/>
+<path fill="#b3b08b" d="M16 14L26 18 26 21 16 17ZM16 23L26 27 26 30 16 26ZM15 31L26 35 27 38 15 34Z"/>
+<path fill="#c4bf96" d="M33 17L44 12 44 15 33 20ZM33 26L45 21 45 24 33 29ZM33 35L45 30 46 33 33 38Z"/>
+<path fill="#aaa781" d="M28 15L30 14 31 42 29 43Z"/>
+<!-- Recessed item and lapis slots. -->
+<path fill="#fff" d="M4 58h24v24H4ZM32 58h24v24H32Z"/>
+<path fill="#373737" d="M3 57h24v24H3ZM31 57h24v24H31Z"/>
+<path fill="#8b8b8b" d="M5 59h22v22H5ZM33 59h22v22H33Z"/>
+<!-- Enchanted sword. -->
+<path fill="#382a3c" d="M8 76h3v-3h3v-3h3v-3h3v-3h3v-3h3v6h-3v3h-3v3h-3v3h-3v3H8Z"/>
+<path fill="#ab82b4" d="M14 71h3v-3h3v-3h3v-3h2v3h-2v3h-3v3h-3v3h-3Z"/>
+<path fill="#765477" d="M10 69h3v3h3v3h3v3h-3v-3h-3v-3h-3Z"/>
+<path fill="#5f3b36" d="M8 77h3v-3h3v3h-3v3H8Z"/>
+<!-- Lapis lazuli. -->
+<path fill="#12346a" d="M37 67h3v-4h8v3h4v9h-3v3H38v-3h-3v-5h2Z"/>
+<path fill="#2457a6" d="M38 67h4v-3h6v4h3v6h-4v3h-8v-3h-3v-4h2Z"/>
+<path fill="#407bd1" d="M40 67h4v-2h3v5h-4v4h-5v-4h2Z"/>
+<path fill="#6294de" d="M41 67h3v4h-3Z"/>
+</svg>

@@ -1,0 +1,6 @@
+* { font-family: Monocraft; border-radius: 0; box-shadow: none; }
+window { background: transparent; color: #d6e2e4; border: none; }
+#browser-search { min-height: 0; min-width: 0; margin: 0; padding: 0 6px; background: #0b141a; color: #edf4ed; border: 3px solid; border-color: #080e13 #52636d #52636d #080e13; font-size: 24px; caret-color: #a9d69a; }
+#browser-search:focus { border-color: #54705d #8cba88 #8cba88 #54705d; }
+#browser-search selection { background: #47614c; color: white; }
+tooltip { background: rgba(13, 23, 29, 0.96); color: #edf4ed; border: 3px solid #53675b; padding: 8px 12px; font-size: 16px; }

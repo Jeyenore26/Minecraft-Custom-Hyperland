@@ -1,0 +1,30 @@
+{
+  "positionX": "right",
+  "positionY": "top",
+  "control-center-width": 460,
+  "notification-window-width": 440,
+  "transition-time": 320,
+  "widgets": [
+    "title",
+    "dnd",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Achievements",
+      "clear-all-button": true,
+      "button-text": "Clear"
+    },
+    "dnd": {
+      "text": "Do not disturb"
+    }
+  },
+  "control-center-margin-top": 12,
+  "control-center-margin-right": 16,
+  "control-center-margin-bottom": 24,
+  "notification-icon-size": 40,
+  "control-center-height": 300,
+  "fit-to-screen": false,
+  "control-center-layer": "top",
+  "keyboard-shortcuts": false
+}
